@@ -33,4 +33,18 @@ var sumSquares = function (x,y,z) {
   else (z<=x && z<=y) {
     return x*x + y*y;
   }
-}
+};
+
+//nightmare.mode
+// Write a function that takes an argument and
+// counts down to zero from that argument.
+// NO LOOPS ALLOWED!
+// Solution? RECURSION- A recursive function is a function that
+// calls itself within the function. (Self reference)
+var countdown = function (n) {
+  if (n>=0) {
+    console.log(n);
+    n--;
+    countdown (n);
+  }
+};
