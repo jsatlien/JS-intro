@@ -20,3 +20,17 @@ var hardMode = function squareSum(x, y, z) {
     console.log(Math.pow((z+x), 2))
   )
       }
+// ^WROOOOOOONNNG! Look for the SMALLEST number instead of writing lengthy code to find the two highest numbers.^
+// Tai's solution:
+
+var sumSquares = function (x,y,z) {
+  if (x<=y && x<=z) {
+    return y*y + z*z;
+  }
+  else if (y<=x && y<=z) {
+    return x*x + z*z;
+  }
+  else (z<=x && z<=y) {
+    return x*x + y*y;
+  }
+}
