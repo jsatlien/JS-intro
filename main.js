@@ -4,6 +4,8 @@
 var givenName;
 // Q: What does `givenName` equal right now?
 // A: It has no value because no value has been defined yet.
+// ****CORRECT ANSWER****- Technically the correct answer is undefined.
+// Javascript does return a value here! It's a crappy "no value" value. But it's a value.
 
 
 givenName = "Brit";
@@ -14,6 +16,8 @@ givenName = "Brit";
 givenName = givenName;
 // Q: What is `givenName` set to right now?
 // A: It is still going to return the value "Brit", because givenName is not a string unless it is closed within quotes or double quotes.
+//****CORRECT ANSWER****- It's going to return Brit because this line sets
+//    the value of givenName to whatever it already is. I.e. no change.
 
 var greeting = "Hello, how are you? " + givenName;
 // Q: What is `greeting` set to?
